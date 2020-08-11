@@ -42,12 +42,14 @@ buildDOM: function(result) {
   //Executes an AJAX call to an API.
   getRequest: function() {
     let _this = this;
-    let date = this.randomDate(new Date(1995, 5, 16), new Date());
+    // let date = "1996-02-23";
+   let date = this.randomDate(new Date(1995, 5, 16), new Date());
     let url = "https://api.nasa.gov/planetary/apod?api_key=Oph27mOX8BZNbd03UoaPBga8xveNnKtSbouf6RXh&date=" + date;
     $.ajax({
         url: url
     }).done(function(result){
         _this.buildDOM(result);
+
     }).fail(function(result){
       console.log(result);
     });

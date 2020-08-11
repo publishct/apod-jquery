@@ -1,6 +1,6 @@
 body {
-    padding: 0;
-    margin: 0;
+    padding: 1% 10% 1% 10%;
+    margin: 0 5em 0 5em;
   }
   
   main {
@@ -32,4 +32,25 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
+  }
+
+  #btnRandApod {
+    display: block;
+    float: center;
+    line-height: 40px;
+    background-color: #4d4847;
+  }
+
+  @media only screen and (max-width: 960px)  {
+    #btnRandApod {
+      display: block;
+      float: center;
+      line-height: 40px;
+      background-color: #4d4847;
+    }
+    
+    body {
+      position: relative;
+    }
+
   }
